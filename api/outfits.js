@@ -27,8 +27,15 @@ router.get('/', (req, res) => {
     queries.getByWeather( { weather }).then(outfits => {
         const randomSelection = Math.floor(Math.random() * outfits.length)
         res.json(outfits[randomSelection]);
+        // res.json(outfits);
     })
     
+});
+
+router.get('/all', (req, res) => {
+    queries.getAll().then(outfits => {
+        res.json(outfits);
+    });
 });
 
 router.get('/:id', (req, res, next) => {

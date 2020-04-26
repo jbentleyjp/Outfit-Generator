@@ -8,6 +8,10 @@ module.exports = {
         }
         return knexQuery;
     },
+    getAll(){
+        return knex('outfit');
+    },
+
     getOne(id) {
         return knex('outfit').where('id', id).first();
     },
