@@ -23,4 +23,4 @@ npm install
 npm run dev
 ```
 
-You should be able to access it on your localhost port 3000
+You should be able to access it on your http://localhost:3000/api/outfits
